@@ -19,6 +19,7 @@ export default function Header() {
 						<div className="relative flex items-center justify-between h-16">
 							<div className="flex items-center px-2 lg:px-0">
 								<div className="flex-shrink-0">
+									<Link href="/">
 										<Image
 											className="block h-8 w-auto"
 											src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
@@ -26,6 +27,7 @@ export default function Header() {
 											height={30}
 											width={30}
 										/>
+										</Link>
 								</div>
 								<div className="hidden lg:block lg:ml-6">
 									<div className="flex space-x-4">
