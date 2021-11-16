@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import {Footer} from "../components/Footer"
 import Header from "../components/Header";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -24,6 +25,7 @@ const Docs: NextPage = () => {
 					</div>
 				</div>
 			</div>
+		
 		</>
 	);
 };

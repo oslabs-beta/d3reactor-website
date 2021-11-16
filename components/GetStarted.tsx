@@ -2,13 +2,14 @@ import Image from "next/image";
 
 export default function GetStarted() {
 	return (
-		<div className="bg-gray-900">
+		<div className="bg-white dark:bg-gray-900">
 			<div className="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-				<h2 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+				<h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
 					<span>Create Performant React</span>
 					<span className="block">Visualizations with speed</span>
 				</h2>
 				<div className="mt-8 flex justify-center">
+					{/* TODO: Replace this image and convert this image tag to Next */}
 					<img
 						alt="Example of D3 Reacts charts and visualizations"
 						src="https://miro.medium.com/max/1400/1*rstwYdItC4WNPg7WhHhpag.png"
