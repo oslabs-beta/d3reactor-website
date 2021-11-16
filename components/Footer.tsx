@@ -22,12 +22,9 @@ const navigation = {
 
 export const Footer = () => {
   return(
-    <footer className="bg-white" aria-labelledby="footer-heading">
-    <h2 id="footer-heading" className="sr-only">
-      Footer
-    </h2>
-    <div className=" max-w-7xl mx-auto pt-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div className="mt-12 border-t border-gray-200 pt-8">
+    <footer className="bg-gray-900" aria-labelledby="footer-heading">
+    <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:py-4 lg:px-8 bg-gray-900">
+      <div className="mt-2 border-t border-gray-100 pt-12">
       </div>
         <p className="flex max-w-full content-center justify-center text-base text-gray-400">&copy; D3Reacts is an open-source project licensed under MIT. </p>
         <div className=" flex max-w-full content-center justify-center pt-1 ">

@@ -2,7 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["tailwindui.com"],
+    domains: ["miro.medium.com"],
   },
 }
-
