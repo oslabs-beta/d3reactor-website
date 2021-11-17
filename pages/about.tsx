@@ -17,33 +17,33 @@ const people = [
     name: 'Ece Ozalp',
     role: 'Software Engineer',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      'https://media-exp1.licdn.com/dms/image/C4E03AQFUkZtsHLrB2w/profile-displayphoto-shrink_400_400/0/1637107906746?e=1642636800&v=beta&t=bXnvmyOPk9hhH55A689s7QVTSuuUhB3NPhL--YU97NQ',
     twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/eceiozalp/',
   },
 	{
     name: 'Eric Mulhern',
     role: 'Software Engineer',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      'https://media-exp1.licdn.com/dms/image/C5603AQFWUuit6BXfmg/profile-displayphoto-shrink_400_400/0/1516974342735?e=1642636800&v=beta&t=fJ6mPsiGxdxy1RSC5OZV9V2ZhR88UbFsluzdce_eOnA',
     twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/eric-mulhern-202645141',
   },
   {
     name: 'Robert Crocker',
     role: 'Software Engineer',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      'https://media-exp1.licdn.com/dms/image/C4D03AQEUNIW40y2lTQ/profile-displayphoto-shrink_800_800/0/1517041698511?e=1642636800&v=beta&t=ry22uFwM3ydEOiv20lHloJCVZ0N7h7cZz3Vlf5c1nYc',
     twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/robertcrocker/',
   },
 	{
     name: 'Travis Lockett',
     role: 'Software Engineer',
     imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+      'https://media-exp1.licdn.com/dms/image/C4E03AQElUMBPC8KalA/profile-displayphoto-shrink_800_800/0/1583904829363?e=1642636800&v=beta&t=hB4i0zftxwybO6mWfTNM30D4gX_wk_3VbXC_OOJ5ex8',
     twitterUrl: '#',
-    linkedinUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/travis-lockett-2258b2126/',
   },
   // More people...
 ];
