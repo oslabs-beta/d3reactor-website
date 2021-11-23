@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Switch } from '@headlessui/react'
-import useDarkMode from './useDarkMode'
+import useDarkMode from '../hooks/useDarkMode'
 
 function classNames(...classes : any)  {
   return classes.filter(Boolean).join(' ')

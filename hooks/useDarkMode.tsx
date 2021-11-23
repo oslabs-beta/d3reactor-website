@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function useDarkMode() {
-  const [theme, setTheme] = useState(
+  const [theme, setTheme] = useState<string>(
     typeof window !== "undefined" ? localStorage.theme : "light"
   );
   const colorTheme = theme === "dark" ? "light" : "dark";
@@ -15,9 +15,9 @@ function useDarkMode() {
     if (typeof window !== "undefined") {
       localStorage.setItem("theme", theme);
     }
-  }, [theme]);
+  }, [theme, colorTheme]);
 
   return [colorTheme, setTheme];
 }
-
+ 
 export default useDarkMode;
