@@ -13,6 +13,7 @@
     "@tailwindcss/forms": "^0.3.4",
     "d3reacts": "file:../../d3package/d3reacts/d3reacts-1.0.0.tgz",
     "next": "12.0.3",
+    "next-themes": "^0.0.15",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
