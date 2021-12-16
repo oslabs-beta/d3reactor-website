@@ -1,22 +1,19 @@
 import { useState, useEffect } from 'react'
 import { Switch } from '@headlessui/react'
-import useDarkMode from '../hooks/useDarkMode'
+import { useTheme } from 'next-themes'
 
 function classNames(...classes : any)  {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Toggle() {
-  const [colorTheme, setTheme] = useDarkMode();
-  const[enabled,setEnabled] = useState<boolean>(false);
+  const {theme, setTheme} = useTheme();
+  const[enabled,setEnabled] = useState<boolean>(theme === 'light' ? false : true);
 
   const handleChange = (nextChecked: boolean) => {
     setEnabled(nextChecked);
+    setTheme(nextChecked ? 'dark' : 'light')
   };
-
-   useEffect(() => {
-     setTheme(enabled ? 'dark' : 'light');
-   }, [enabled, setTheme]);
 
   return (
     <Switch
