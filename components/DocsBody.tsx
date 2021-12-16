@@ -16,6 +16,9 @@ import {
 	LightningBoltIcon,
 	MoonIcon,
 } from "@heroicons/react/outline";
+import { AreaChart } from 'd3reacts'
+import skinny_fruit from '../data/skinny_fruit.json'
+
 
 const navigation = [
 	{ name: "Installation", href: "#", icon: PlusCircleIcon, current: true },
@@ -191,7 +194,67 @@ export default function DocsBody() {
 						<main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
 							{/* Start main area*/}
 							<div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
-								<div className="h-full border-2 border-gray-200 border-dashed rounded-lg" />
+								Hello Chart
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
+								<AreaChart
+									data={skinny_fruit}
+									xData={{ key: "date", dataType: "date" }}
+									yData={{ key: "value", dataType: "number" }}
+									groupBy="fruit"
+									xGrid={true}
+									yGrid={true}
+									xAxisLabel="Date"
+									yAxisLabel="Number of fruit"
+								/>
 							</div>
 							{/* End main area */}
 						</main>
