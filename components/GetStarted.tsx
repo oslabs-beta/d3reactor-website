@@ -1,4 +1,7 @@
 import Image from "next/image";
+import { AreaChart } from 'd3reacts';
+import skinny_fruit from '../data/skinny_fruit.json';
+
 
 export default function GetStarted() {
 	return (
@@ -8,13 +11,23 @@ export default function GetStarted() {
 					<span>Create Performant React</span>
 					<span className="block">Visualizations with speed</span>
 				</h2>
-				<div className="mt-8 flex justify-center">
-					{/* TODO: Replace this image and convert this image tag to Next */}
-					<img
-						alt="Example of D3 Reacts charts and visualizations"
-						src="https://miro.medium.com/max/1400/1*rstwYdItC4WNPg7WhHhpag.png"
-					/>
+				<h3 className="mt-8"> Area Chart - Example</h3>
+				<div className="mt-8 flex justify-center mr-10">
+					{/* When you uncomment this code and refresh the pages route an error of self not defined is thrown */}
+					{/* <AreaChart
+						data={skinny_fruit}
+						xData={{ key: "date", dataType: "date" }}
+						yData={{ key: "value", dataType: "number" }}
+						groupBy="fruit"
+						xGrid={true}
+						yGrid={true}
+						xAxisLabel="Date"
+						yAxisLabel="Number of fruit"
+						height="400px"
+						width="600px"
+					/> */}
 				</div>
+
 				<div className="mt-8 flex justify-center">
 					<div className="inline-flex rounded-md shadow">
 						<a
