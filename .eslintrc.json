@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "no-duplicate-imports":"error",
+    "import/no-unresolved":0,
+    "no-param-reassign":0,
+    "implicit-arrow-linebreak": 0,
+    "react/react-in-jsx-scope": "off"
+  },
+  "ignorePatterns": ["node_modules"]
 }
