@@ -2,13 +2,7 @@
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import {
-	CalendarIcon,
-	HomeIcon,
-	MapIcon,
-	MenuIcon,
 	ChartBarIcon,
-	SearchCircleIcon,
-	SpeakerphoneIcon,
 	UserGroupIcon,
 	XIcon,
 	ChevronLeftIcon,
@@ -16,8 +10,8 @@ import {
 	LightningBoltIcon,
 	MoonIcon,
 } from "@heroicons/react/outline";
-import { AreaChart } from 'd3reacts'
-import skinny_fruit from '../data/skinny_fruit.json'
+// import { AreaChart } from 'd3reacts'
+// import skinny_fruit from '../data/skinny_fruit.json'
 
 
 const navigation = [
@@ -195,7 +189,7 @@ export default function DocsBody() {
 							{/* Start main area*/}
 							<div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
 								Hello Chart
-								<AreaChart
+								{/* <AreaChart
 									data={skinny_fruit}
 									xData={{ key: "date", dataType: "date" }}
 									yData={{ key: "value", dataType: "number" }}
@@ -254,7 +248,7 @@ export default function DocsBody() {
 									yGrid={true}
 									xAxisLabel="Date"
 									yAxisLabel="Number of fruit"
-								/>
+								/> */}
 							</div>
 							{/* End main area */}
 						</main>

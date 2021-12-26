@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import {Footer} from "../components/Footer"
 import Header from "../components/Header";
 import DocsBody from "../components/DocsBody";
 import Head from "next/head";

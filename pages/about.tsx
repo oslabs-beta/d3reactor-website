@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Header from "../components/Header";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { Footer } from "../components/Footer";
 
 const people = [
@@ -33,7 +32,7 @@ const people = [
 		name: "Robert Crocker",
 		role: "Software Engineer",
 		imageUrl:
-			"https://media-exp1.licdn.com/dms/image/C4D03AQEUNIW40y2lTQ/profile-displayphoto-shrink_800_800/0/1517041698511?e=1642636800&v=beta&t=ry22uFwM3ydEOiv20lHloJCVZ0N7h7cZz3Vlf5c1nYc",
+			"https://media-exp1.licdn.com/dms/image/C4D03AQHQ41b1uwS1kA/profile-displayphoto-shrink_800_800/0/1638054876875?e=1646265600&v=beta&t=puXT-q4SoLyISFF-tlHbVADer93a6VqNiP9vbz0m7zo",
 		twitterUrl: "#",
 		linkedinUrl: "https://www.linkedin.com/in/robertcrocker/",
 	},

@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { AreaChart } from 'd3reacts';
-import skinny_fruit from '../data/skinny_fruit.json';
 
 
 export default function GetStarted() {
