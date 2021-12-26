@@ -1,65 +1,65 @@
-import type { NextPage } from "next";
-import Header from "../components/Header";
-import Head from "next/head";
-import { Footer } from "../components/Footer";
+import type {NextPage} from 'next';
+import Header from '../components/Header';
+import Head from 'next/head';
+import {Footer} from '../components/Footer';
 
 const people = [
-	{
-		name: "Dmitri Iershov",
-		role: "Software Engineer",
-		imageUrl:
-			"https://i.ibb.co/RjThrt5/dmtri.png&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-		twitterUrl: "#",
-		linkedinUrl: "#",
-	},
-	{
-		name: "Ece Ozalp",
-		role: "Software Engineer",
-		imageUrl:
-			"https://media-exp1.licdn.com/dms/image/C4E03AQFUkZtsHLrB2w/profile-displayphoto-shrink_400_400/0/1637107906746?e=1642636800&v=beta&t=bXnvmyOPk9hhH55A689s7QVTSuuUhB3NPhL--YU97NQ",
-		twitterUrl: "#",
-		linkedinUrl: "https://www.linkedin.com/in/eceiozalp/",
-	},
-	{
-		name: "Eric Mulhern",
-		role: "Software Engineer",
-		imageUrl:
-			"https://i.ibb.co/q1Ngb9B/11-16-20-Eric-6.jpg&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-		twitterUrl: "#",
-		linkedinUrl: "https://www.linkedin.com/in/eric-mulhern-202645141",
-	},
-	{
-		name: "Robert Crocker",
-		role: "Software Engineer",
-		imageUrl:
-			"https://media-exp1.licdn.com/dms/image/C4D03AQHQ41b1uwS1kA/profile-displayphoto-shrink_800_800/0/1638054876875?e=1646265600&v=beta&t=puXT-q4SoLyISFF-tlHbVADer93a6VqNiP9vbz0m7zo",
-		twitterUrl: "#",
-		linkedinUrl: "https://www.linkedin.com/in/robertcrocker/",
-	},
-	{
-		name: "Travis Lockett",
-		role: "Software Engineer",
-		imageUrl:
-			"https://media-exp1.licdn.com/dms/image/C4E03AQElUMBPC8KalA/profile-displayphoto-shrink_800_800/0/1583904829363?e=1642636800&v=beta&t=hB4i0zftxwybO6mWfTNM30D4gX_wk_3VbXC_OOJ5ex8",
-		twitterUrl: "#",
-		linkedinUrl: "https://www.linkedin.com/in/travis-lockett-2258b2126/",
-	},
-	// More people...
+  {
+    name: 'Dmitri Iershov',
+    role: 'Software Engineer',
+    imageUrl: 'https://i.ibb.co/RjThrt5/dmtri.png&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    twitterUrl: '#',
+    linkedinUrl: '#',
+  },
+  {
+    name: 'Ece Ozalp',
+    role: 'Software Engineer',
+    imageUrl:
+      'https://media-exp1.licdn.com/dms/image/C4E03AQFUkZtsHLrB2w/profile-displayphoto-shrink_400_400/0/1637107906746?e=1642636800&v=beta&t=bXnvmyOPk9hhH55A689s7QVTSuuUhB3NPhL--YU97NQ',
+    twitterUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/eceiozalp/',
+  },
+  {
+    name: 'Eric Mulhern',
+    role: 'Software Engineer',
+    imageUrl: 'https://i.ibb.co/q1Ngb9B/11-16-20-Eric-6.jpg&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+    twitterUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/eric-mulhern-202645141',
+  },
+  {
+    name: 'Robert Crocker',
+    role: 'Software Engineer',
+    imageUrl:
+      'https://media-exp1.licdn.com/dms/image/C4D03AQHQ41b1uwS1kA/profile-displayphoto-shrink_800_800/0/1638054876875?e=1646265600&v=beta&t=puXT-q4SoLyISFF-tlHbVADer93a6VqNiP9vbz0m7zo',
+    twitterUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/robertcrocker/',
+  },
+  {
+    name: 'Travis Lockett',
+    role: 'Software Engineer',
+    imageUrl:
+      'https://media-exp1.licdn.com/dms/image/C4E03AQElUMBPC8KalA/profile-displayphoto-shrink_800_800/0/1583904829363?e=1642636800&v=beta&t=hB4i0zftxwybO6mWfTNM30D4gX_wk_3VbXC_OOJ5ex8',
+    twitterUrl: '#',
+    linkedinUrl: 'https://www.linkedin.com/in/travis-lockett-2258b2126/',
+  },
+  // More people...
 ];
 
 const About: NextPage = () => {
-	return (
+  return (
     <div className="bg-white dark:bg-gray-900">
-			<Head>
-				<title>About</title>
-				<meta name="description" content="About" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<Header />
+      <Head>
+        <title>About</title>
+        <meta name="description" content="About" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
       <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl ">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-black dark:text-gray-100">Meet our team</h2>
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-black dark:text-gray-100">
+              Meet our team
+            </h2>
             <p className="text-xl text-gray-500 dark:text-gray-200">
               Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet lectus sit pretium egestas vel mattis
               neque.
@@ -107,10 +107,9 @@ const About: NextPage = () => {
           </ul>
         </div>
       </div>
-			<Footer/>
+      <Footer />
     </div>
-  )
-
+  );
 };
 
 export default About;
