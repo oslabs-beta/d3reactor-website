@@ -16,7 +16,7 @@ export default function Header() {
       {({open}) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center justify-between h-16 fixed">
               <div className="flex items-center px-2 lg:px-0">
                 <div className="flex-shrink-0">
                   <Link href="/">
