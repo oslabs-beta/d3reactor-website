@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import {Fragment, useState} from 'react';
 import {Dialog, Transition} from '@headlessui/react';
+import {Footer} from '../components/Footer';
 import {
   ChartBarIcon,
   UserGroupIcon,
@@ -8,17 +9,15 @@ import {
   ChevronLeftIcon,
   PlusCircleIcon,
   LightningBoltIcon,
-  MoonIcon,
+  DatabaseIcon,
 } from '@heroicons/react/outline';
-// import { AreaChart } from 'd3reacts'
-// import skinny_fruit from '../data/skinny_fruit.json'
 
 const navigation = [
   {name: 'Installation', href: '#', icon: PlusCircleIcon, current: true},
   {name: 'Charts', href: '#', icon: ChartBarIcon, current: false},
   {name: 'Accesibility', href: '#', icon: UserGroupIcon, current: false},
-  {name: 'Data', href: '#', icon: LightningBoltIcon, current: false},
-  {name: 'Shapes', href: '#', icon: MoonIcon, current: false},
+  {name: 'API', href: '#', icon: LightningBoltIcon, current: false},
+  {name: 'Datatypes', href: '#', icon: DatabaseIcon, current: false},
 ];
 
 function classNames(...classes: string[]) {
@@ -82,7 +81,7 @@ export default function DocsBody() {
                     </button>
                   </div>
                 </Transition.Child>
-                <div className="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+                <div className="flex-1 pt-5 pb-4 overflow-y-auto">
                   <div className="flex-shrink-0 flex items-center px-4">Docs</div>
                   <nav aria-label="Sidebar" className="mt-5">
                     <div className="px-2 space-y-1">
@@ -119,7 +118,7 @@ export default function DocsBody() {
         </Transition.Root>
 
         {/* Static sidebar for desktop */}
-        <div className="hidden lg:flex lg:flex-shrink-0">
+        <div className="hidden lg:flex lg:flex-shrink-0 h-screen">
           <div className="flex flex-col w-64">
             {/* Sidebar component, swap this element with another sidebar if you like */}
             <div className="flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white-100">
@@ -174,74 +173,48 @@ export default function DocsBody() {
             <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none">
               {/* Start main area*/}
               <div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
-                Hello Chart
-                {/* <AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/>
-								<AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/>
-								<AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/>
-								<AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/>
-								<AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/>
-								<AreaChart
-									data={skinny_fruit}
-									xData={{ key: "date", dataType: "date" }}
-									yData={{ key: "value", dataType: "number" }}
-									groupBy="fruit"
-									xGrid={true}
-									yGrid={true}
-									xAxisLabel="Date"
-									yAxisLabel="Number of fruit"
-								/> */}
+                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-3xl">
+                  Installation and Getting Started
+                </h1>
+                MDX component here with the installation instructions from Github
+                <h1 className="text-1xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-2xl">
+                  More info
+                </h1>
+                <h1 className="text-1xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-2xl">
+                  More info and cool component demos.More info and cool component demos.More info and cool component
+                  demos.More info and cool component demos.More info and cool component demos.More info and cool
+                  component demos.More info and cool component demos.More info and cool component demos.More info and
+                  cool component demos.More info and cool component demos.More info and cool component demos.More info
+                  and cool component demos.More info and cool component demos.More info and cool component demos.More
+                  info and cool component demos.More info and cool component demos.More info and cool component
+                  demos.More info and cool component demos.More info and cool component demos.More info and cool
+                  component demos.More info and cool component demos.More info and cool component demos.More info and
+                  cool component demos.More info and cool component demos.More info and cool component demos.More info
+                  and cool component demos.More info and cool component demos.
+                </h1>
+                <Footer />
               </div>
               {/* End main area */}
             </main>
             <aside className="hidden relative xl:flex xl:flex-col flex-shrink-0 w-96 border-l border-gray-200 overflow-y-auto">
               {/* Start secondary column (hidden on smaller screens) */}
+
               <div className="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
-                <div className="h-full border-2 border-gray-200 border-dashed rounded-lg" />
+                <h1 className="font-extrabold tracking-tight text-gray-900">On This page</h1>
+                This section will include current highlights of the current page. This is an option section and will not
+                be visible on smaller viewports. This section will include current highlights of the current page. This
+                is an option section and will not be visible on smaller viewports. This section will include current
+                highlights of the current page. This is an option section and will not be visible on smaller viewports.
+                This section will include current highlights of the current page. This is an option section and will not
+                be visible on smaller viewports. This section will include current highlights of the current page. This
+                is an option section and will not be visible on smaller viewports. This section will include current
+                highlights of the current page. This is an option section and will not be visible on smaller viewports.
+                This section will include current highlights of the current page. This is an option section and will not
+                be visible on smaller viewports. This section will include current highlights of the current page. This
+                is an option section and will not be visible on smaller viewports. This section will include current
+                highlights of the current page. This is an option section and will not be visible on smaller viewports.
+                This section will include current highlights of the current page. This is an option section and will not
+                be visible on smaller viewports.
               </div>
               {/* End secondary column */}
             </aside>

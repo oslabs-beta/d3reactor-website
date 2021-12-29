@@ -1,3 +1,6 @@
+// import {AreaChart} from 'd3reacts';
+// import skinny_fruit from '../data/skinny_fruit.json';
+
 export default function GetStarted() {
   return (
     <div className="bg-white dark:bg-gray-900">
@@ -8,19 +11,19 @@ export default function GetStarted() {
         </h2>
         <h3 className="mt-8"> Area Chart - Example</h3>
         <div className="mt-8 flex justify-center mr-10">
-          {/* When you uncomment this code and refresh the pages route an error of self not defined is thrown */}
+          Area chart will be here when libary is updated.
           {/* <AreaChart
-						data={skinny_fruit}
-						xData={{ key: "date", dataType: "date" }}
-						yData={{ key: "value", dataType: "number" }}
-						groupBy="fruit"
-						xGrid={true}
-						yGrid={true}
-						xAxisLabel="Date"
-						yAxisLabel="Number of fruit"
-						height="400px"
-						width="600px"
-					/> */}
+            data={skinny_fruit}
+            height="300"
+            xKey="date"
+            xDataType="date"
+            yKey="value"
+            groupBy="fruit"
+            xGrid={true}
+            yGrid={true}
+            xAxisLabel="Date"
+            yAxisLabel="Number of fruit"
+          /> */}
         </div>
 
         <div className="mt-8 flex justify-center">
