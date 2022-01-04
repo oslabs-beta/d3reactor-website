@@ -1,0 +1,105 @@
+# Area Chart
+
+## Area chart example and sandbox here
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+## Data
+
+__type:__ array[object]
+
+### Single example
+```shell
+### Data Format Example Single
+[
+  {
+    "culmen_length_mm": 39.1,
+    "body_mass_g": 3750,
+  },
+  {
+    "culmen_length_mm": 36.7,
+    "body_mass_g": 3450,
+  },
+  {
+    "culmen_length_mm": 39.3,
+    "body_mass_g": 3650,
+ },
+]
+```
+### Multi example
+```shell
+### Data Format Example Multi
+
+[
+ {
+   "date": "Thu Feb 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+   "fruit": "apples",
+   "value": 10
+ },
+ {
+   "date": "Thu Mar 01 2018 00:00:00 GMT-0500 (Eastern Standard Time)",
+   "fruit": "apples",
+   "value": 15
+ },
+ {
+   "date": "Sun Apr 01 2018 00:00:00 GMT-0400 (Eastern Daylight Time)",
+   "fruit": "apples",
+   "value": 20
+ },
+]
+```
+## Props
+
+### Height
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `height`           | `string or number` | `true`    | `100%`  |
+
+### Width
+
+| Prop               | Type               | Optional  | Default |
+| ------------------ | ------------------ | --------- | ------- |
+| `width`           | `string or number` | `true`    | `100%`  |
+
+### xKey
+__type:__ string
+__optional:__ false
+__requirements:__ A key of properties in array data objects used on x Axis.
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `xKey`             | `string`           | `false`   | `A key of properties in array data objects used on x Axis.`  |
+
+### yKey
+__type:__ string
+__optional:__ false
+__requirements:__ A key of properties in array data objects used on x Axis.
+
+| Prop               | Type               | Optional  | Requirements |
+| ------------------ | ------------------ | --------- | ------------ |
+| `xKey`             | `string`           | `false`   | `A key of properties in array data objects used on y Axis.`  |
+
+
+
