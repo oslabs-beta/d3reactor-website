@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import {Switch} from '@headlessui/react';
 import {useTheme} from 'next-themes';
 
