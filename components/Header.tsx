@@ -37,7 +37,7 @@ export default function Header() {
                         Guides
                       </a>
                     </Link>
-                    <Link href="https://docs-ebon-ten.vercel.app/">
+                    <Link href="https://docs-irbopia.vercel.app/docs/intro/">
                       <a className="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                         Docs
                       </a>
@@ -178,7 +178,7 @@ export default function Header() {
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="https://docs-ebon-ten.vercel.app/"
+                href="https://docs-irbopia.vercel.app/docs/intro/"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Docs
