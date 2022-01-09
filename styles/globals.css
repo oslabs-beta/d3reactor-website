@@ -21,10 +21,10 @@ a {
 @tailwind utilities;
 
 @layer base {
-  body{
-    @apply text-gray-400
+  body {
+    @apply text-gray-900;
   }
-  meta{
-    @apply text-gray-400
+  meta {
+    @apply text-gray-900;
   }
 }
