@@ -20,8 +20,8 @@ export default function Toggle() {
       checked={enabled}
       onChange={handleChange}
       className={classNames(
-        enabled ? 'bg-indigo-600' : 'bg-gray-200',
-        'relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-indigo-500',
+        enabled ? 'bg-blue-400' : 'bg-gray-200',
+        'relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-blue-400',
       )}
     >
       <span className="sr-only">Use setting</span>
