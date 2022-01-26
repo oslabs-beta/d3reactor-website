@@ -7,37 +7,32 @@ const people = [
   {
     name: 'Dmitri Iershov',
     role: 'Software Engineer',
-    imageUrl: 'https://i.ibb.co/RjThrt5/dmtri.png&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Dmitri-Iershov-Engineer.png',
     linkedinUrl: '#',
   },
   {
     name: 'Ece Ozalp',
     role: 'Software Engineer',
-    imageUrl:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQFUkZtsHLrB2w/profile-displayphoto-shrink_400_400/0/1637107906746?e=1642636800&v=beta&t=bXnvmyOPk9hhH55A689s7QVTSuuUhB3NPhL--YU97NQ',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Ece-Ozalp-Engineer.png',
     linkedinUrl: 'https://www.linkedin.com/in/eceiozalp/',
   },
   {
     name: 'Eric Mulhern',
     role: 'Software Engineer',
     imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Eric-Mulhern-Engineer.jpg',
-    twitterUrl: '#',
     linkedinUrl: 'https://www.linkedin.com/in/eric-mulhern-202645141',
   },
   {
     name: 'Robert Crocker',
     role: 'Software Engineer',
     imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Robert-Crocker-Engineer.png',
-    twitterUrl: '#',
+    twitterUrl: 'https://twitter.com/robcrock',
     linkedinUrl: 'https://www.linkedin.com/in/robertcrocker/',
   },
   {
     name: 'Travis Lockett',
     role: 'Software Engineer',
     imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Travis-Lockett-Engineer.png',
-    twitterUrl: '#',
     linkedinUrl: 'https://www.linkedin.com/in/travis-lockett-2258b2126/',
   },
   // More people...
@@ -56,12 +51,8 @@ const About: NextPage = () => {
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl ">
             <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-black dark:text-white">
-              Meet our team
+              Our maintainers
             </h2>
-            <p className="text-xl text-gray-900 dark:text-white">
-              Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet lectus sit pretium egestas vel mattis
-              neque.
-            </p>
           </div>
           <ul
             role="list"
@@ -77,17 +68,19 @@ const About: NextPage = () => {
                       <p className="text-blue-400">{person.role}</p>
                     </div>
                     <ul role="list" className="flex justify-center space-x-5">
-                      <li>
-                        <a
-                          href={person.twitterUrl}
-                          className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400"
-                        >
-                          <span className="sr-only">Twitter</span>
-                          <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                          </svg>
-                        </a>
-                      </li>
+                      {person.twitterUrl ? (
+                        <li>
+                          <a
+                            href={person.twitterUrl}
+                            className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400"
+                          >
+                            <span className="sr-only">Twitter</span>
+                            <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                          </a>
+                        </li>
+                      ) : null}
                       <li>
                         <a
                           href={person.linkedinUrl}

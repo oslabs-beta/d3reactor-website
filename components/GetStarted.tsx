@@ -1,5 +1,6 @@
-// import {AreaChart} from 'd3reacts';
-// import skinny_fruit from '../data/skinny_fruit.json';
+import dynamic from 'next/dynamic';
+
+const AreaChart = dynamic(() => import('../components/charts/AreaChart'), {ssr: false});
 
 export default function GetStarted() {
   return (
@@ -10,19 +11,8 @@ export default function GetStarted() {
           <span className="block">Visualizations with speed</span>
         </h2>
         <h3 className="mt-8"> Area Chart - Example</h3>
-        <div className="mt-8 flex justify-center mr-10">
-          {/* <AreaChart
-            data={skinny_fruit}
-            height="300"
-            xKey="date"
-            xDataType="date"
-            yKey="value"
-            groupBy="fruit"
-            xGrid={true}
-            yGrid={true}
-            xAxisLabel="Date"
-            yAxisLabel="Number of fruit"
-          /> */}
+        <div className="mt-8 flex justify-center ml-4">
+          <AreaChart />
         </div>
 
         <div className="mt-8 flex justify-center">
@@ -39,7 +29,7 @@ export default function GetStarted() {
               href="#"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-500 bg-blue-100 hover:bg-blue-200"
             >
-              Npm i d3-reacts
+              Npm i d3reactor
             </a>
           </div>
         </div>
