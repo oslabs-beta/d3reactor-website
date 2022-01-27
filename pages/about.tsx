@@ -7,35 +7,34 @@ const people = [
   {
     name: 'Dmitri Iershov',
     role: 'Software Engineer',
-    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Dmitri-Iershov-Engineer.png',
-    linkedinUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Dmitri-Iershov-Engineer.png',
+    linkedinUrl: 'https://www.linkedin.com/in/dmitri-iershov/',
   },
   {
     name: 'Ece Ozalp',
     role: 'Software Engineer',
-    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Ece-Ozalp-Engineer.png',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Ece-Ozalp-Engineer.png',
     linkedinUrl: 'https://www.linkedin.com/in/eceiozalp/',
   },
   {
     name: 'Eric Mulhern',
     role: 'Software Engineer',
-    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Eric-Mulhern-Engineer.jpg',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Eric-Mulhern-Engineer.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/eric-mulhern-202645141',
   },
   {
     name: 'Robert Crocker',
     role: 'Software Engineer',
-    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Robert-Crocker-Engineer.png',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Robert-Crocker-Engineer.png',
     twitterUrl: 'https://twitter.com/robcrock',
     linkedinUrl: 'https://www.linkedin.com/in/robertcrocker/',
   },
   {
     name: 'Travis Lockett',
     role: 'Software Engineer',
-    imageUrl: 'https://storage.googleapis.com/d3reacts/contributors/Travis-Lockett-Engineer.png',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Travis-Lockett-Engineer.png',
     linkedinUrl: 'https://www.linkedin.com/in/travis-lockett-2258b2126/',
   },
-  // More people...
 ];
 
 const About: NextPage = () => {

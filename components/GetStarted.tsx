@@ -1,6 +1,6 @@
-import dynamic from 'next/dynamic';
+// import dynamic from 'next/dynamic';
 
-const AreaChart = dynamic(() => import('../components/charts/AreaChart'), {ssr: false});
+// const AreaChart = dynamic(() => import('../components/charts/AreaChart'), {ssr: false});
 
 export default function GetStarted() {
   return (
@@ -11,9 +11,7 @@ export default function GetStarted() {
           <span className="block">Visualizations with speed</span>
         </h2>
         <h3 className="mt-8"> Area Chart - Example</h3>
-        <div className="mt-8 flex justify-center ml-4">
-          <AreaChart />
-        </div>
+        <div className="mt-8 flex justify-center ml-4">{/* <AreaChart /> */}</div>
 
         <div className="mt-8 flex justify-center">
           <div className="inline-flex rounded-md shadow">

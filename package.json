@@ -1,5 +1,5 @@
 {
-  "name": "d3reacts-website",
+  "name": "d3reactor",
   "private": true,
   "scripts": {
     "dev": "next dev",
