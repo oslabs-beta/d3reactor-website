@@ -1,7 +1,7 @@
 ## Getting Started
 
 
-### Installing d3reacts package on your local machine
+### Installing d3reactor package on your local machine
 
 ```
 1. Create a directory

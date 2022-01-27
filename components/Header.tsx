@@ -18,7 +18,7 @@ export default function Header() {
                   <Link href="/">
                     <Image
                       className="block h-8 w-auto"
-                      src="https://storage.googleapis.com/d3reacts/D3-Reacts-Logo-Blue.svg"
+                      src="https://storage.googleapis.com/d3reactor/D3-Reacts-Logo-Blue.svg"
                       alt="Workflow"
                       height={50}
                       width={50}
@@ -28,7 +28,7 @@ export default function Header() {
                 <div className="hidden lg:block lg:ml-6">
                   <div className="flex space-x-4 hover:text-blue-400">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-900 hover:text-blue-400" */}
-                    <Link href="https://docs-irbopia.vercel.app/docs/intro/">
+                    <Link href="https://docs.d3reactor.com/">
                       <a className="text-gray-900 dark:text-white hover:text-blue-400 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
                         Docs
                       </a>
@@ -91,7 +91,7 @@ export default function Header() {
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-900 hover:text-blue-400" */}
               <Disclosure.Button
                 as="a"
-                href="https://docs-irbopia.vercel.app/docs/intro/"
+                href="https://docs.d3reactor.com"
                 className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
               >
                 Docs
