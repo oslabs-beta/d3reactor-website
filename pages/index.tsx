@@ -8,8 +8,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>d3Reactor</title>
-        <meta name="description" content="Create performant D3 react charts and visualizations fast." />
+        <title>d3reactor</title>
+        <meta name="description" content="Create performant d3reactor charts and visualizations fast." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header></Header>
