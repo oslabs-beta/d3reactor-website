@@ -5,7 +5,7 @@ const navigation = {
   social: [
     {
       name: 'GitHub',
-      href: 'https://github.com/oslabs-beta/d3reacts',
+      href: 'https://github.com/oslabs-beta/d3reactor',
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -25,7 +25,7 @@ export const Footer = () => {
       <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:py-4 lg:px-8 text-gray-900 dark:text-white">
         <div className="mt-2 border-t border-gray-200 pt-12"></div>
         <p className="flex max-w-full content-center justify-center text-base">
-          &copy; D3Reacts is an open-source project licensed under MIT.{' '}
+          &copy; d3reactor is an open-source project licensed under MIT.{' '}
         </p>
         <div className=" flex max-w-full content-center justify-center pt-1 ">
           {navigation.social.map((item) => (
