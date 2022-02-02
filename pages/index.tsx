@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title>d3reactor</title>
         <meta name="description" content="Create performant d3reactor charts and visualizations fast." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header></Header>
       <GetStarted></GetStarted>

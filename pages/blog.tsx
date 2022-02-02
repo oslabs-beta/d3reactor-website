@@ -9,7 +9,7 @@ const Blog: NextPage = () => {
       <Head>
         <title>Blog</title>
         <meta name="description" content="Blog" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <div className="bg-white dark:bg-black min-h-screen">
