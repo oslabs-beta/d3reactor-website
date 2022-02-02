@@ -1713,10 +1713,10 @@ d3@^7.1.1:
     d3-transition "3"
     d3-zoom "3"
 
-d3reactor@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/d3reactor/-/d3reactor-0.0.8.tgz#38c354cf23e3a22ae7c836501d87aa9322b97bae"
-  integrity sha512-5y7wiXP/jp7HKMl1OeGtOnIc0Ix7Gai8YqKrwgRjv5FqV0Fu57rg3vKgEGwFDHlB+3RVlCRVf5X3QlokS/0nOg==
+d3reactor@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/d3reactor/-/d3reactor-0.0.9.tgz#9b2dbc8a5c3f48f0f5b01f58d50b45ec8fdde5e9"
+  integrity sha512-7r91CASF6d2vlOcqQ82F86Gk7sY3H8pQDOpHqc7ZRLozdHKoZLrq+3RbsgC9GtieO6uvpVJrq9WU8k+Vl7xzyA==
   dependencies:
     "@types/d3" "^7.1.0"
     "@types/styled-components" "5.1.21"

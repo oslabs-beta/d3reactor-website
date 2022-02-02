@@ -43,7 +43,7 @@ const About: NextPage = () => {
       <Head>
         <title>About</title>
         <meta name="description" content="About" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header />
       <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
