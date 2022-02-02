@@ -1,20 +1,24 @@
 import {AreaChart} from 'd3reactor';
-import skinny_fruit from '../../data/skinny_fruit.json';
+import language from '../../data/language.json';
+import {useTheme} from 'next-themes';
 
 export default function AreaChartExample() {
-  const themeMode = localStorage.getItem('theme');
+  const {theme} = useTheme();
   return (
     <AreaChart
-      theme={themeMode}
-      height="400px"
+      height="500px"
       width="75%"
-      data={skinny_fruit}
-      xKey="date"
-      yKey="value"
+      data={language}
+      xKey="Date"
+      yKey="popularity"
       xAxis="bottom"
+      groupBy="language"
       yAxis="right"
       yGrid={true}
-      groupBy="fruit"
+      yAxisLabel="Popularity (%)"
+      legend="top"
+      colorScheme="schemeBlues"
+      theme={theme === 'light' || theme === 'dark' ? theme : undefined}
     />
   );
 }
