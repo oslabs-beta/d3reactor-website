@@ -13,10 +13,11 @@ export default function AreaChartExample() {
       yKey="popularity"
       xAxis="bottom"
       groupBy="language"
-      yAxis="right"
+      yAxis="left"
       yGrid={true}
       yAxisLabel="Popularity (%)"
-      legend="top"
+      legend="right"
+      legendLabel="Languages"
       colorScheme="schemeBlues"
       theme={theme === 'light' || theme === 'dark' ? theme : undefined}
     />
