@@ -1,6 +1,6 @@
 import {Fragment} from 'react';
 import {Disclosure} from '@headlessui/react';
-import {SearchIcon} from '@heroicons/react/solid';
+// import {SearchIcon} from '@heroicons/react/solid';
 import {MenuIcon, XIcon} from '@heroicons/react/outline';
 import Link from 'next/link';
 import Image from 'next/image';

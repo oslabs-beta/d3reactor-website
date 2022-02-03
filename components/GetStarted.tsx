@@ -2,7 +2,6 @@ import dynamic from 'next/dynamic';
 // import AreaChartSB from '../components/codeSandbox/AreaChartSB';
 import BarChartSB from '../components/codeSandbox/BarChartSB';
 
-
 const AreaChart = dynamic(() => import('../components/charts/AreaChart'), {ssr: false});
 
 export default function GetStarted() {
