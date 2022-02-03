@@ -34,14 +34,14 @@ export default function GetStarted() {
             </a>
           </div> */}
         </div>
-        <div>
+        {/* <div>
           <h3 className="mt-8 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             All charts are responsive
           </h3>
         </div>
         <div className="mt-8">
           <BarChartSB />
-        </div>
+        </div> */}
         {/* <div>
           <h3 className="mt-8 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             Performant
