@@ -11,4 +11,4 @@ export default function AreaChartSB() {
     </p>
   `;
   return <div dangerouslySetInnerHTML={{__html: rawHTML}}></div>;
-};
+}
