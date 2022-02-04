@@ -1,70 +1,57 @@
-import type { NextPage } from "next";
-import Header from "../components/Header";
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { Footer } from "../components/Footer";
+import type {NextPage} from 'next';
+import Header from '../components/Header';
+import Head from 'next/head';
+import {Footer} from '../components/Footer';
 
 const people = [
-	{
+  {
     name: 'Dmitri Iershov',
     role: 'Software Engineer',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Dmitri-Iershov-Engineer.png',
+    linkedinUrl: 'https://www.linkedin.com/in/dmitri-iershov/',
   },
-	{
+  {
     name: 'Ece Ozalp',
     role: 'Software Engineer',
-    imageUrl:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQFUkZtsHLrB2w/profile-displayphoto-shrink_400_400/0/1637107906746?e=1642636800&v=beta&t=bXnvmyOPk9hhH55A689s7QVTSuuUhB3NPhL--YU97NQ',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Ece-Ozalp-Engineer.png',
     linkedinUrl: 'https://www.linkedin.com/in/eceiozalp/',
   },
-	{
+  {
     name: 'Eric Mulhern',
     role: 'Software Engineer',
-    imageUrl:
-      'https://media-exp1.licdn.com/dms/image/C5603AQFWUuit6BXfmg/profile-displayphoto-shrink_400_400/0/1516974342735?e=1642636800&v=beta&t=fJ6mPsiGxdxy1RSC5OZV9V2ZhR88UbFsluzdce_eOnA',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Eric-Mulhern-Engineer.jpg',
     linkedinUrl: 'https://www.linkedin.com/in/eric-mulhern-202645141',
   },
   {
     name: 'Robert Crocker',
     role: 'Software Engineer',
-    imageUrl:
-      'https://media-exp1.licdn.com/dms/image/C4D03AQEUNIW40y2lTQ/profile-displayphoto-shrink_800_800/0/1517041698511?e=1642636800&v=beta&t=ry22uFwM3ydEOiv20lHloJCVZ0N7h7cZz3Vlf5c1nYc',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Robert-Crocker-Engineer.png',
+    twitterUrl: 'https://twitter.com/robcrock',
     linkedinUrl: 'https://www.linkedin.com/in/robertcrocker/',
   },
-	{
+  {
     name: 'Travis Lockett',
     role: 'Software Engineer',
-    imageUrl:
-      'https://media-exp1.licdn.com/dms/image/C4E03AQElUMBPC8KalA/profile-displayphoto-shrink_800_800/0/1583904829363?e=1642636800&v=beta&t=hB4i0zftxwybO6mWfTNM30D4gX_wk_3VbXC_OOJ5ex8',
-    twitterUrl: '#',
+    imageUrl: 'https://storage.googleapis.com/d3reactor/Travis-Lockett-Engineer.png',
     linkedinUrl: 'https://www.linkedin.com/in/travis-lockett-2258b2126/',
   },
-  // More people...
 ];
 
 const About: NextPage = () => {
-	return (
-    <div className="bg-white dark:bg-gray-900">
-			<Head>
-				<title>About</title>
-				<meta name="description" content="About" />
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-			<Header />
+  return (
+    <div className="bg-white dark:bg-black">
+      <Head>
+        <title>About</title>
+        <meta name="description" content="About" />
+        <link rel="icon" href="/favicon.svg" />
+      </Head>
+      <Header />
       <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12">
           <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl ">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-black dark:text-gray-100">Meet our team</h2>
-            <p className="text-xl text-gray-500 dark:text-gray-200">
-              Ornare sagittis, suspendisse in hendrerit quis. Sed dui aliquet lectus sit pretium egestas vel mattis
-              neque.
-            </p>
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl text-black dark:text-white">
+              Our maintainers
+            </h2>
           </div>
           <ul
             role="list"
@@ -75,21 +62,29 @@ const About: NextPage = () => {
                 <div className="space-y-6">
                   <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={person.imageUrl} alt="" />
                   <div className="space-y-2">
-                    <div className="text-lg leading-6 font-medium space-y-1">
+                    <div className="text-lg leading-6 font-medium space-y-1 dark:text-white">
                       <h3>{person.name}</h3>
-                      <p className="text-indigo-600">{person.role}</p>
+                      <p className="text-blue-400">{person.role}</p>
                     </div>
                     <ul role="list" className="flex justify-center space-x-5">
+                      {person.twitterUrl ? (
+                        <li>
+                          <a
+                            href={person.twitterUrl}
+                            className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400"
+                          >
+                            <span className="sr-only">Twitter</span>
+                            <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                          </a>
+                        </li>
+                      ) : null}
                       <li>
-                        <a href={person.twitterUrl} className="text-gray-400 hover:text-gray-500">
-                          <span className="sr-only">Twitter</span>
-                          <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href={person.linkedinUrl} className="text-gray-300 hover:text-gray-500">
+                        <a
+                          href={person.linkedinUrl}
+                          className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400"
+                        >
                           <span className="sr-only">LinkedIn</span>
                           <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                             <path
@@ -108,10 +103,9 @@ const About: NextPage = () => {
           </ul>
         </div>
       </div>
-			<Footer/>
+      <Footer />
     </div>
-  )
-
+  );
 };
 
 export default About;

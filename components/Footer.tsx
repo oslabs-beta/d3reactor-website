@@ -1,13 +1,12 @@
-import Image from 'next/image'
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-const navigation = {
+export const navigation = {
   social: [
     {
       name: 'GitHub',
-      href: 'https://github.com/oslabs-beta/d3reacts',
-      icon: (props : any) => (
+      href: 'https://github.com/oslabs-beta/d3reactor',
+      icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
@@ -18,28 +17,29 @@ const navigation = {
       ),
     },
   ],
-}
+};
 
 export const Footer = () => {
-  return(
-    <footer className="bg-white dark:bg-gray-900" aria-labelledby="footer-heading">
-    <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:py-4 lg:px-8">
-      <div className="mt-2 border-t border-gray-200 pt-12">
-      </div>
-        <p className="flex max-w-full content-center justify-center text-base text-gray-400">&copy; D3Reacts is an open-source project licensed under MIT. </p>
+  return (
+    <footer className="bg-white dark:bg-black" aria-labelledby="footer-heading">
+      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:py-4 lg:px-8 text-gray-900 dark:text-white">
+        <div className="mt-2 border-t border-gray-900 pt-12"></div>
+        <p className="flex max-w-full content-center justify-center text-base">
+          &copy; d3reactor is an open-source project licensed under MIT.{' '}
+        </p>
         <div className=" flex max-w-full content-center justify-center pt-1 ">
-            {navigation.social.map((item) => (
-              <Link key={item.name} href={item.href}>
-              <a className="text-gray-400 hover:text-gray-500">
+          {navigation.social.map((item) => (
+            <Link key={item.name} href={item.href}>
+              <a className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400">
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
-              </Link>
-            ))}
-          </div>
+            </Link>
+          ))}
+        </div>
       </div>
-          { /* TODO:  Put our own logo */} 
-         {/*}
+      {/* TODO:  Put our own logo */}
+      {/*}
           <Image
             className="h-10"
             src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
@@ -48,7 +48,6 @@ export const Footer = () => {
             height={20}
           />
           */}
-          
     </footer>
-  )
-}
+  );
+};
