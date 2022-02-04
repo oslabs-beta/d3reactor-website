@@ -44,7 +44,7 @@ export default function AreaChartExample() {
       yAxis="left"
       yGrid={true}
       yAxisLabel="Popularity (%)"
-      legend={cWidth < 900 ? 'bottom' : 'right'}
+      legend={cWidth < 900 ? false : 'right'}
       colorScheme="schemeBlues"
       theme={theme === 'light' || theme === 'dark' ? theme : undefined}
     />
