@@ -5,6 +5,8 @@ import {MenuIcon, XIcon} from '@heroicons/react/outline';
 import Link from 'next/link';
 import Image from 'next/image';
 import Toggle from './Toggle';
+import { navigation } from './Footer'
+
 
 export default function Header() {
   return (
@@ -18,10 +20,10 @@ export default function Header() {
                   <Link href="/">
                     <Image
                       className="block h-8 w-auto"
-                      src="https://storage.googleapis.com/d3reactor/d3-reactor-logo.svg"
+                      src="https://storage.googleapis.com/d3reactor/d3-reactor-logo-horizontal.svg"
                       alt="Workflow"
                       height={40}
-                      width={40}
+                      width={172}
                     />
                   </Link>
                 </div>
@@ -78,7 +80,17 @@ export default function Header() {
               </div>
               <div className="hidden lg:block lg:ml-4">
                 <div className="flex items-center">
-                  <div className="p-4">
+                  <div className=" flex max-w-full content-center justify-center ">
+                    {navigation.social.map((item) => (
+                      <Link key={item.name} href={item.href}>
+                        <a className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400">
+                        <span className="sr-only">{item.name}</span>
+                      <item.icon className="h-6 w-6" aria-hidden="true" />
+                    </a>
+                      </Link>
+                      ))}
+                  </div>
+                  <div className="p-3 mt-1">
                     <Toggle />
                   </div>
                 </div>
