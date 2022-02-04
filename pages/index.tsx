@@ -8,9 +8,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>D3Reacts</title>
-        <meta name="description" content="Create performant D3 react charts and visualizations fast." />
-        <link rel="icon" href="/favicon.ico" />
+        <title>d3reactor</title>
+        <meta name="description" content="Create performant d3reactor charts and visualizations fast." />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <Header></Header>
       <GetStarted></GetStarted>

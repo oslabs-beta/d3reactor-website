@@ -1,6 +1,6 @@
 import {Fragment} from 'react';
 import {Disclosure} from '@headlessui/react';
-import {SearchIcon} from '@heroicons/react/solid';
+// import {SearchIcon} from '@heroicons/react/solid';
 import {MenuIcon, XIcon} from '@heroicons/react/outline';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -18,17 +18,17 @@ export default function Header() {
                   <Link href="/">
                     <Image
                       className="block h-8 w-auto"
-                      src="https://storage.googleapis.com/d3reacts/D3-Reacts-Logo-Blue.svg"
+                      src="https://storage.googleapis.com/d3reactor/d3-reactor-logo.svg"
                       alt="Workflow"
-                      height={50}
-                      width={50}
+                      height={40}
+                      width={40}
                     />
                   </Link>
                 </div>
                 <div className="hidden lg:block lg:ml-6">
                   <div className="flex space-x-4 hover:text-blue-400">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-900 hover:text-blue-400" */}
-                    <Link href="https://docs-irbopia.vercel.app/docs/intro/">
+                    <Link href="https://docs.d3reactor.com/docs/intro">
                       <a className="text-gray-900 dark:text-white hover:text-blue-400 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
                         Docs
                       </a>
@@ -38,15 +38,15 @@ export default function Header() {
                         About us
                       </a>
                     </Link>
-                    <Link href="/blog">
+                    {/* <Link href="/blog">
                       <a className="text-gray-900 dark:text-white hover:text-blue-400 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
                         Blog
                       </a>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
-              <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
+              {/* <div className="flex-1 flex justify-center px-2 lg:ml-6 lg:justify-end">
                 <div className="max-w-lg w-full lg:max-w-xs">
                   <label htmlFor="search" className="sr-only">
                     Search
@@ -64,10 +64,10 @@ export default function Header() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className="flex lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -91,25 +91,25 @@ export default function Header() {
               {/* Current: "bg-gray-900 text-white", Default: "text-gray-900 hover:text-blue-400" */}
               <Disclosure.Button
                 as="a"
-                href="https://docs-irbopia.vercel.app/docs/intro/"
-                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                href="https://docs.d3reactor.com/docs/intro"
+                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
               >
                 Docs
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
               >
                 About us
               </Disclosure.Button>
-              <Disclosure.Button
+              {/* <Disclosure.Button
                 as="a"
                 href="/blog"
-                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
               >
                 Blog
-              </Disclosure.Button>
+              </Disclosure.Button> */}
             </div>
           </Disclosure.Panel>
         </>
