@@ -9,9 +9,12 @@ export default function GetStarted() {
     <div className="bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto min-h-screen text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8 text-gray-900 dark:text-white">
         <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
-          <span>Add D3 to Your React</span>
-          <span className="block">Apps With Ease</span>
+          <span className="block">Performant, Responsive</span>
+          <span className="block">Data Visualizations</span>
         </h2>
+        <h3 className="text-2xl font-bold mt-2 tracking-tight text-gray-900 dark:text-white sm:text-xl">
+          <span className="block">Built with D3 for React</span>
+        </h3>
         <div className="mt-8 flex justify-center ml-4">
           <AreaChart />
         </div>
@@ -25,14 +28,14 @@ export default function GetStarted() {
               Get started
             </a>
           </div>
-          {/* <div className="ml-3 inline-flex">
+          <div className="ml-3 inline-flex">
             <a
               href="#"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-500 bg-blue-100 hover:bg-blue-200"
             >
-              yarn add d3reactor
+              npm i d3reactor
             </a>
-          </div> */}
+          </div>
         </div>
         {/* <div>
           <h3 className="mt-8 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
@@ -41,7 +44,7 @@ export default function GetStarted() {
         </div>
         <div className="mt-8">
           <BarChartSB />
-        </div> */}
+        </div>
         {/* <div>
           <h3 className="mt-8 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             Performant
