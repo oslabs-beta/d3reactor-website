@@ -5,8 +5,7 @@ import {MenuIcon, XIcon} from '@heroicons/react/outline';
 import Link from 'next/link';
 import Image from 'next/image';
 import Toggle from './Toggle';
-import { navigation } from './Footer'
-
+import {navigation} from './Footer';
 
 export default function Header() {
   return (
@@ -17,7 +16,7 @@ export default function Header() {
             <div className="relative flex items-center justify-between h-16 fixed">
               <div className="flex items-center px-2 lg:px-0">
                 <div className="flex-shrink-0">
-                  <Link href="/">
+                  <Link passHref={true} href="/">
                     <Image
                       className="block h-8 w-auto"
                       src="https://storage.googleapis.com/d3reactor/d3-reactor-logo-horizontal.svg"
@@ -69,7 +68,7 @@ export default function Header() {
               </div> */}
               <div className="flex lg:hidden">
                 {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-blue-400 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200 dark:text-white hover:text-white hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-200">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -83,12 +82,12 @@ export default function Header() {
                   <div className=" flex max-w-full content-center justify-center ">
                     {navigation.social.map((item) => (
                       <Link key={item.name} href={item.href}>
-                        <a className="text-gray-900 hover:text-gray-500 dark:text-white dark:hover:text-blue-400">
-                        <span className="sr-only">{item.name}</span>
-                      <item.icon className="h-6 w-6" aria-hidden="true" />
-                    </a>
+                        <a className="text-gray-900 hover:text-gray-500 dark:text-white hover:text-blue-400">
+                          <span className="sr-only">{item.name}</span>
+                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        </a>
                       </Link>
-                      ))}
+                    ))}
                   </div>
                   <div className="p-3 mt-1">
                     <Toggle />
@@ -104,21 +103,21 @@ export default function Header() {
               <Disclosure.Button
                 as="a"
                 href="https://docs.d3reactor.com/docs/intro"
-                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium dark:text-white"
               >
                 Docs
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="/about"
-                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium dark:text-white"
               >
                 About us
               </Disclosure.Button>
               {/* <Disclosure.Button
                 as="a"
                 href="/blog"
-                className="text-white hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium"
+                className="text-gray-900 hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium dark:text-white"
               >
                 Blog
               </Disclosure.Button> */}
