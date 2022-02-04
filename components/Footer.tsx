@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const navigation = {
+export const navigation = {
   social: [
     {
       name: 'GitHub',
